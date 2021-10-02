@@ -1,0 +1,13 @@
+import {useState} from "react";
+
+function User(){ 
+const [logged,setLogged]=useState(1);
+
+  return (
+    <div>
+        {logged==1?<h1>hello user1</h1>:logged==2?<h1>Hello User2</h1>:<h1>Empty User</h1>}
+    </div>
+  );
+}
+
+export default User;
